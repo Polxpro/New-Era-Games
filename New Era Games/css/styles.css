@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:rgb(37, 13, 56);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    background: rgba(91, 12, 122, 0.3);
+    border: 2px solid rgba(166, 23, 223, 0.3);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logo { 
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color:rgb(57, 12, 109)
+}
+
+.search {
+    background: rgba(91, 12, 122, 0.3);
+    backdrop-filter: blur(0.4rem);
+    border: 2px solid rgba(166, 23, 223, 0.5);
+    border-radius: 1rem;
+    padding: 0.6rem 1.2rem;
+    width: 250px;
+    color: white;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 1rem;
+}
+
+.glass-effect {
+    background: rgba(133, 17, 179, 0.3);
+    backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(0.8rem);
+}
+
+.card-container {
+    width: 300px;
+    height: auto;
+    border: 2px solid rgba(166, 23, 223, 0.5);
+    border-radius: 1rem;
+    background: rgba(91, 12, 122, 0.3);
+    padding: 10px 10px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 10px rgba(30, 10, 46, 0.3);
+}
+
+.title {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.card-container:hover {
+    box-shadow: 0 5px 15px rgba(166, 23, 223, 0.5);
+    transform: translateY(-5px)
+}
+
+.category {
+    border: 2px solid rgba(166, 23, 223, 0.5);
+    border-radius: 2rem;
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+
+.desc {
+    color: white;
+}
+
+.game-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgba(166, 23, 223, 0.5);
+    border-radius: 1rem;
+    color: white;
+    background: rgb(95, 196, 255);
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.profile-pic {
+    display: flex;
+    border-radius: 2rem;
+    width: 2rem;
+}
+
+.btn {
+    margin-top: 0;
+    margin-left: 0.2rem;
+    border: 2px solid rgba(166, 23, 223, 0.3);
+    border-radius: 2rem;
+    color: white;
+    background: rgba(166, 23, 223, 0.3);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.username {
+    display: flex;
+    margin-right: 3rem;
+    color: white;
+}
+
+.main-layout {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.filters-sidebar {
+    position: fixed;
+    top: 200px;
+    z-index: 500;
+}
+
+.games-grid {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-left: 150px;
+    width: auto;
+}
+
+.header--scroll-down {
+    transform: translateY(-270px);
+}
+
+.main--scroll-down .filters-sidebar {
+    transform: translateY(-270px);
+}
+
+.header main --scroll-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    background: rgba(91, 12, 122, 0.3);
+    border: 2px solid rgba(166, 23, 223, 0.3);
+    box-sizing: border-box;
+    z-index: 1000;
+
+}
+
+.user {
+    display: flex;
+}
+
+header,
+.main-layout,
+.filters-sidebar,
+.btn {
+    transition: all 0.4s ease-in-out;
+}
