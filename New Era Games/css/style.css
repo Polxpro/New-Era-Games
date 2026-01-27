@@ -1,0 +1,55 @@
+body {
+  background: #0e0f14;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.filter-bar {
+  background: #1b1d26;
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: fit-content;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  background: #2a2d3a;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab.active {
+  background: #c7ff00;
+  color: black;
+}
+
+.tab:hover {
+  background: #3a3f52;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters select {
+  background: #2a2d3a;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filters select:hover {
+  background: #3a3f52;
+}
