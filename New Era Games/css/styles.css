@@ -182,6 +182,7 @@ input::placeholder {
     position: fixed;
     top: 200px;
     z-index: 500;
+    border-radius: 30px;
 }
 
 .games-grid {
